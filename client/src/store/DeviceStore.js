@@ -60,6 +60,6 @@ export default class DeviceStore {
         return this._page
     }
     get limit() {
-        return this._limit
+        return this._limit = 4
     }
 }

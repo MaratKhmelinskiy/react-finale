@@ -9,6 +9,7 @@ const CreateType = ({show, onHide}) => {
     const addType = () => {
         createType({name: value}).then(data => {
             setValue('')
+            alert(`Добавлен тип ${value}`);
             onHide()
         })
     }
@@ -34,7 +35,7 @@ const CreateType = ({show, onHide}) => {
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+                <Button variant="outline-danger" onClick={onHide} >Закрыть</Button>
                 <Button variant="outline-success" onClick={addType}>Добавить</Button>
             </Modal.Footer>
         </Modal>

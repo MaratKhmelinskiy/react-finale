@@ -9,6 +9,7 @@ const CreateBrand = ({show, onHide}) => {
     const addBrand = () => {
         createBrand({name: value}).then(data => {
             setValue('')
+            alert(`Добавлен бренд ${value}`);
             onHide()
         })
     }
